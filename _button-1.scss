@@ -1,0 +1,18 @@
+.effect-1{
+    background-color: #28348A;
+}
+.effect-1::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px; // padding top 20px, bottom 20px + 24px line-height
+    background-color: rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+
+.effect-1:hover::before{
+    width: 100%;
+}
